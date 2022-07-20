@@ -10,7 +10,7 @@
   --gray: #A1A1A1;
 }
 
-body {
+.page {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   font-size: 1.3rem;
@@ -37,47 +37,47 @@ a:hover {
   text-decoration: underline;
 }
 
-header {
+.header {
   background-color: var(--primary-color);
   padding: 48px 0;
   border-bottom: var(--secondary-color) 6px solid;
 }
 
-header a {
+.header .link {
   font-size: 1.5rem;
   color: var(--off-white);
 }
 
-main a {
+.main .link {
   color: var(--danger-color);
 }
 
-main > article, nav{
+.main .article, .navigation{
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
-nav {
+.navigation {
   display: block;
 }
 
-nav > a:not(:first-of-type){
+.navigation .link:not(:first-of-type){
   margin-left: 24px;
 }
 
-nav > a.logo {
+.navigation .link.logo {
   margin-right: auto;
   text-transform: uppercase;
 }
 
-main > section, main > article {
+.main .hero, .main .article {
   margin-bottom: 96px;
   box-shadow: 4px 4px 10px var(--gray);
   background-color: var(--white);
 }
 
-main > section.hero {
+.main .hero {
   height: 300px;
   background-image: url(https://picsum.photos/1920/1000);
   background-size: cover;
@@ -89,7 +89,7 @@ main > section.hero {
   text-align: center;
 }
 
-section.hero > .call-to-action {
+.hero .call-to-action {
   font-size: 2rem;
   font-weight: 700;
   text-shadow: var(--white) 0px 0px 10px, var(--white) 0px 0px 20px, var(--gray) 2px 2px 2px;
@@ -97,7 +97,7 @@ section.hero > .call-to-action {
   margin: 0;
 }
 
-section.hero > button {
+.hero .button {
   background-color: var(--secondary-color);
   border: none;
   padding: 12px 24px;
@@ -106,16 +106,16 @@ section.hero > button {
   cursor: pointer;
 }
 
-main article {
+.main .article {
   padding: 48px 96px;
 }
 
-main p {
+.main .hero .call-to-action {
   line-height: 1.75;
   margin-bottom: 48px;;
 }
 
-main > article img {
+.main .article_img {
   float: left;
   width: 300px;
   height: auto;
@@ -123,7 +123,7 @@ main > article img {
   margin-bottom: 6px;
 }
 
-footer {
+.footer {
   margin-top: auto;
   background-color: var(--gray);
   text-align: center;
@@ -131,4 +131,3 @@ footer {
   padding: 24px 0;
   color: var(--off-white);
 }
-
